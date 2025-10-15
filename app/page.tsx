@@ -9,7 +9,6 @@ import ApproachSection from './components/ApproachSection';
 import TestimonialSection from './components/TestimonialSection';
 import LogosSection from './components/LogosSection';
 import BlogSection from './components/BlogSection';
-import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -36,8 +35,6 @@ export default function Home() {
         <LogosSection />
         {/* blog stories */}
         <BlogSection />
-        {/* call to action */}
-        <CTASection />
       </main>
       <Footer />
     </>

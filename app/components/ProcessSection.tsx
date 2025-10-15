@@ -44,13 +44,13 @@ export default function ProcessSection() {
               <div key={id} className="relative flex flex-col items-center">
                 {/* Dotted connector line - only between items on desktop */}
                 {index < steps.length - 1 && (
-                  <div className="absolute left-1/2 top-28 hidden h-px w-full border-t-2 border-dotted border-gray-300 md:block" />
+                  <div className="absolute left-1/2 top-28 hidden h-px w-full border-t-3 border-dotted border-gray-200 md:block" />
                 )}
 
                 {/* Card container */}
                 <div className="relative z-10 flex flex-col items-center">
                 {/* Number badge */}
-                  <div className="absolute top-[-28px] right-[15px] sm:top-[-25px] sm:right-[30px] mt-0 mr-0 p-4 bg-gray-100 rounded-full text-lg font-medium text-black flex items-center justify-center">
+                  <div className="absolute top-[-28px] right-[35px] sm:top-[-25px] sm:right-[30px] lg:top-[-25px] lg:right-[30px]  mt-0 mr-0 p-4 bg-gray-100 rounded-full text-lg font-medium text-black flex items-center justify-center">
                     {id}.
                   </div>
 

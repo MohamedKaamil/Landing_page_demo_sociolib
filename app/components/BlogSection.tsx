@@ -53,7 +53,7 @@ const posts: BlogPost[] = [
 
 export default function BlogSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white mb-40 lg:mb-30">
       <div className="container mx-auto px-4 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

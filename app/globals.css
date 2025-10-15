@@ -18,3 +18,21 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* Add this CSS for the blinking cursor */
+.cursor-blink {
+  display: inline-block;
+  width: 5px; /* Adjust cursor width */
+  background-color: #fff; /* White cursor */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

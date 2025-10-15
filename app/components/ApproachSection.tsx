@@ -25,7 +25,7 @@ export default function ApproachSection() {
   const current = slides[index];
 
   return (
-    <section className="py-20">
+    <section className="py-20 ">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 px-5 md:flex-row md:px-8 mb-10">
         {/* Image slider */}
         <div className="relative w-full md:w-1/2">

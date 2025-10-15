@@ -2,24 +2,25 @@
 
 import { Facebook, Twitter, Youtube, Mail, Phone } from "lucide-react";
 import Link from "next/link";
+import CTASection from "./CTASection";
 
-/**
- * Footer replicates the closing section of the original template.
- * It uses a dark background and three columns: company info with
- * social icons, office details with contact information, and
- * navigation links. At the bottom a small bar displays a credit and
- * basic legal links. The colours and spacing align with the overall
- * scheme defined in Tailwind config. Social icons are supplied by
- * lucide‑react to avoid external font dependencies.
- */
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-8">
-      <div className="container mx-auto px-4 grid md:grid-cols-3 gap-12 pt-20 pb-16">
+    // 1. Add 'relative' to the main footer tag to create the positioning context.
+    // Also, add padding here to create space for the overlapping CTA.
+    <footer className="relative bg-gray-900 text-gray-300 pt-35 pb-12">
+      {/* 2. Position the CTA absolutely relative to the footer */}
+      <div
+        className="absolute top-[-22] left-1/2 w-full max-w-7xl -translate-x-1/2 -translate-y-1/2 px-0 "
+      >
+        <CTASection />
+      </div>
+
+      {/* 3. The rest of your footer content */}
+      <div className="container mx-auto px-12 grid md:grid-cols-3 gap-12 py-10">
         {/* Column: Logo & description */}
         <div>
           <Link href="#" className="inline-block mb-4">
-            {/* Use the same logo image as in the header */}
             <img
               src="https://demo.sociolib.com/mulk/wp-content/uploads/sites/7/2021/10/mulk.png"
               alt="Mulk logo"
@@ -54,6 +55,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
+
         {/* Column: Office info */}
         <div>
           <h6 className="text-white font-semibold mb-6">OFFICE</h6>
@@ -69,6 +71,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
         {/* Column: Menu & Links */}
         <div className="grid grid-cols-2 gap-10">
           <div>
@@ -118,7 +121,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-800 mt-12 pt-6 pb-4 text-sm text-white-500 flex flex-col md:flex-row items-center justify-between px-4">
+
+      <div className="border-t border-gray-800 mt-12 pt-6 pb-0 text-sm text-white-500 flex flex-col md:flex-row items-center justify-between px-4">
         <span className="mb-4 md:mb-0">Powered by SocioLib.</span>
         <div className="space-x-4">
           <Link href="#" className="hover:text-white transition">

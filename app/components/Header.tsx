@@ -33,7 +33,7 @@ export default function Header() {
             alt="Mulk logo"
             width={120}
             height={40}
-            className="w-22 h-3.5 sm:w-32 sm:h-12 md:w-40 md:h-14 lg:w-30 lg:h-5" // Responsive logo size
+            className="w-22 h-3.5 sm:w-32 sm:h-1 md:w-40 md:h-14 lg:w-30 lg:h-5" // Responsive logo size
           />
         </Link>
 
