@@ -120,11 +120,11 @@ export default function AccordionSection() {
             className="absolute top-1/2 lg:left-[42%] left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
           >
             {/* Replaced Next.js <Image> with standard <img> tag */}
-            <img
+            <Image
               src="https://demo.sociolib.com/mulk/wp-content/uploads/sites/7/2021/10/iphone-paralax.png"
               alt="Evano Everyday App on iPhone"
-              width="400"
-              height="815"
+              width={400}
+              height={815}
               className="lg:h-[287px] lg:w-[150px] h-[160px] w-[84px]"
             />
           </motion.div>
